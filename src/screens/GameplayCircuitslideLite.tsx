@@ -19,7 +19,12 @@ export interface GameplayCircuitslideLiteProps {
 }
 
 export function GameplayCircuitslideLite({ actions, runtime }: GameplayCircuitslideLiteProps) {
-  void runtime;
+  const score = runtime?.score ?? 0;
+  const energy = runtime?.energy ?? 100;
+  const lives = runtime?.lives ?? 3;
+  const paused = runtime?.paused ?? false;
+  const timerText = paused ? "PAUSED" : "ACTIVE";
+
   return (
     <>
       {/* Ambient Grid Overlay */}
@@ -111,23 +116,23 @@ export function GameplayCircuitslideLite({ actions, runtime }: GameplayCircuitsl
       <nav className="bg-surface-container-lowest/50 backdrop-blur-md fixed right-4 top-20 rounded-xl border border-white/5 shadow-[0_0_15px_rgba(255,178,183,0.3)] animate-pulse-slow flex flex-col gap-grid-gap p-4 w-fit z-40 hidden md:flex">
       <div className="mb-4 pb-2 border-b border-white/10 text-center">
       <h2 className="font-hud-label text-hud-label text-secondary uppercase tracking-widest">SYSTEM_HUD</h2>
-      <p className="font-hud-label text-[10px] text-tertiary mt-1 opacity-80">CONNECTED</p>
+      <p className="font-hud-label text-[10px] text-tertiary mt-1 opacity-80">{paused ? "PAUSED" : "CONNECTED"}</p>
       </div>
       <div className="flex flex-col gap-4">
       {/* Score */}
       <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors">
       <Trophy className="text-on-surface-variant font-hud-label" aria-hidden={true} focusable="false" />
-      <span className="text-on-surface-variant font-hud-label uppercase">SCORE: 2450</span>
+      <span className="text-on-surface-variant font-hud-label uppercase">SCORE: {score}</span>
       </div>
       {/* Level */}
       <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors">
       <Bolt className="text-on-surface-variant font-hud-label" aria-hidden={true} focusable="false" />
-      <span className="text-on-surface-variant font-hud-label uppercase">LVL: 12</span>
+      <span className="text-on-surface-variant font-hud-label uppercase">ENERGY: {energy}</span>
       </div>
       {/* Timer (Active) */}
       <div className="flex items-center gap-3 p-2 rounded-lg bg-white/5">
       <Timer className="text-tertiary font-hud-timer neon-glow-pink" aria-hidden={true} focusable="false" />
-      <span className="text-tertiary font-hud-timer neon-glow-pink">00:45</span>
+      <span className="text-tertiary font-hud-timer neon-glow-pink">{lives} LIVE{lives === 1 ? "" : "S"}</span>
       </div>
       </div>
       <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
@@ -139,8 +144,8 @@ export function GameplayCircuitslideLite({ actions, runtime }: GameplayCircuitsl
       {/* Mobile Bottom Controls Overlay (visible only on small screens) */}
       <div className="md:hidden fixed bottom-4 left-4 right-4 flex justify-between items-end z-40 pointer-events-none">
       <div className="glass-panel p-3 rounded-lg flex flex-col gap-1 pointer-events-auto border-tertiary/30">
-      <span className="font-hud-label text-[10px] text-tertiary uppercase">Time Remaining</span>
-      <span className="text-tertiary font-hud-timer text-2xl neon-glow-pink leading-none">00:45</span>
+      <span className="font-hud-label text-[10px] text-tertiary uppercase">Run Status</span>
+      <span className="text-tertiary font-hud-timer text-2xl neon-glow-pink leading-none">{timerText}</span>
       </div>
       <button className="bg-secondary text-on-primary font-button-text text-button-text uppercase h-14 px-6 rounded-full shadow-[0_0_15px_rgba(93,230,255,0.4)] pointer-events-auto flex items-center gap-2" data-action="ACT_START_GAME" type="button" data-action-id="start-5" onClick={actions?.["start-5"]}>
       <Play  style={{fontVariationSettings: "'FILL' 1"}} aria-hidden={true} focusable="false" />

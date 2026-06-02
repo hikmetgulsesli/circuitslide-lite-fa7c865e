@@ -1,4 +1,6 @@
 import { useCircuitSlideLiteStore } from "./features/circuitslide-lite/circuitslide-lite.store";
+import { actReturnToGameplay } from "./features/surf-game-settings/act_return_to_gameplay";
+import { actSavePreferences } from "./features/surf-game-settings/act_save_preferences";
 import { actPauseGame } from "./features/surf-gameplay/act_pause_game";
 import { actRestartGame } from "./features/surf-gameplay/act_restart_game";
 import { actStartGame } from "./features/surf-gameplay/act_start_game";
@@ -19,13 +21,13 @@ export default function App() {
     "start-5": () => actStartGame(actions),
   };
   const settingsActions: Partial<Record<GameSettingsCircuitslideLiteActionId, () => void>> = {
-    "close-settings-1": actions.closeSettings,
+    "close-settings-1": () => actReturnToGameplay(actions),
     "easy-2": () => actions.setDifficulty("easy"),
     "medium-3": () => actions.setDifficulty("medium"),
     "hard-4": () => actions.setDifficulty("hard"),
     "reset-to-defaults-5": actions.resetDefaults,
-    "return-6": actions.closeSettings,
-    "save-config-7": actions.saveConfig,
+    "return-6": () => actReturnToGameplay(actions),
+    "save-config-7": () => actSavePreferences(actions),
   };
 
   return (

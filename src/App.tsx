@@ -1,4 +1,7 @@
 import { useCircuitSlideLiteStore } from "./features/circuitslide-lite/circuitslide-lite.store";
+import { actPauseGame } from "./features/surf-gameplay/act_pause_game";
+import { actRestartGame } from "./features/surf-gameplay/act_restart_game";
+import { actStartGame } from "./features/surf-gameplay/act_start_game";
 import {
   GameSettingsCircuitslideLite,
   GameplayCircuitslideLite,
@@ -9,11 +12,11 @@ import {
 export default function App() {
   const { state, runtime, actions } = useCircuitSlideLiteStore();
   const gameplayActions: Partial<Record<GameplayCircuitslideLiteActionId, () => void>> = {
-    "pause-1": actions.pause,
-    "refresh-2": actions.reset,
+    "pause-1": () => actPauseGame(actions),
+    "refresh-2": () => actRestartGame(actions),
     "settings-3": actions.openSettings,
-    "start-sequence-4": actions.tick,
-    "start-5": actions.start,
+    "start-sequence-4": () => actStartGame(actions),
+    "start-5": () => actStartGame(actions),
   };
   const settingsActions: Partial<Record<GameSettingsCircuitslideLiteActionId, () => void>> = {
     "close-settings-1": actions.closeSettings,

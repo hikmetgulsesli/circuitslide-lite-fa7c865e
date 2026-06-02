@@ -1,0 +1,96 @@
+[
+  {
+    "screenId": "0c57ae743aef431cb4b753bf28a872b5",
+    "title": "Gameplay - CircuitSlide Lite",
+    "componentName": "GameplayCircuitslideLite",
+    "file": "src/screens/GameplayCircuitslideLite.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "pause-1",
+        "kind": "button",
+        "label": "Pause",
+        "index": 0
+      },
+      {
+        "id": "refresh-2",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "button",
+        "label": "Settings",
+        "index": 2
+      },
+      {
+        "id": "start-sequence-4",
+        "kind": "button",
+        "label": "Start Sequence",
+        "index": 3
+      },
+      {
+        "id": "start-5",
+        "kind": "button",
+        "label": "Start",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "screenId": "2aa3f124e86f4f2a8be8899dd7942039",
+    "title": "Game Settings - CircuitSlide Lite",
+    "componentName": "GameSettingsCircuitslideLite",
+    "file": "src/screens/GameSettingsCircuitslideLite.tsx",
+    "buttons": 7,
+    "inputs": 5,
+    "links": 0,
+    "actions": [
+      {
+        "id": "close-settings-1",
+        "kind": "button",
+        "label": "Close settings",
+        "index": 0
+      },
+      {
+        "id": "easy-2",
+        "kind": "button",
+        "label": "Easy",
+        "index": 1
+      },
+      {
+        "id": "medium-3",
+        "kind": "button",
+        "label": "Medium",
+        "index": 2
+      },
+      {
+        "id": "hard-4",
+        "kind": "button",
+        "label": "Hard",
+        "index": 3
+      },
+      {
+        "id": "reset-to-defaults-5",
+        "kind": "button",
+        "label": "Reset to Defaults",
+        "index": 4
+      },
+      {
+        "id": "return-6",
+        "kind": "button",
+        "label": "Return",
+        "index": 5
+      },
+      {
+        "id": "save-config-7",
+        "kind": "button",
+        "label": "Save Config",
+        "index": 6
+      }
+    ]
+  }
+]

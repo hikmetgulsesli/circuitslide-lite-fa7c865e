@@ -1,0 +1,213 @@
+[
+  {
+    "screenId": "0c57ae743aef431cb4b753bf28a872b5",
+    "screenTitle": "Gameplay - CircuitSlide Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Pause",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Refresh",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Start Sequence",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "Start",
+        "line": 295
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Pause",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Refresh",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Start Sequence",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "Start",
+        "line": 295
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 5,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "2aa3f124e86f4f2a8be8899dd7942039",
+    "screenTitle": "Game Settings - CircuitSlide Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Close settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "Easy",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Medium",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Hard",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 300
+      },
+      {
+        "type": "button",
+        "label": "Return",
+        "line": 307
+      },
+      {
+        "type": "button",
+        "label": "Save Config",
+        "line": 310
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 218
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 231
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 244
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 257
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 268
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Close settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "Easy",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Medium",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Hard",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 300
+      },
+      {
+        "type": "button",
+        "label": "Return",
+        "line": 307
+      },
+      {
+        "type": "button",
+        "label": "Save Config",
+        "line": 310
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 218
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 231
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 244
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 257
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 268
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

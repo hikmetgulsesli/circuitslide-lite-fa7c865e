@@ -29,7 +29,11 @@ export default function App() {
   };
 
   return (
-    <div data-setfarm-root="circuitslide-lite" data-testid="setfarm-app-root">
+    <div
+      className="relative flex h-dvh min-h-screen w-full flex-col overflow-hidden bg-background"
+      data-setfarm-root="circuitslide-lite"
+      data-testid="setfarm-app-root"
+    >
       {state.activeScreen === "settings" ? (
         <GameSettingsCircuitslideLite actions={settingsActions} />
       ) : (

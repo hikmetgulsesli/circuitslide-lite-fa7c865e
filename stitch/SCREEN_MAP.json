@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "0c57ae743aef431cb4b753bf28a872b5",
+    "name": "Gameplay - CircuitSlide Lite",
+    "type": "game",
+    "description": "Gameplay - CircuitSlide Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "2aa3f124e86f4f2a8be8899dd7942039",
+    "name": "Game Settings - CircuitSlide Lite",
+    "type": "settings",
+    "description": "Game Settings - CircuitSlide Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

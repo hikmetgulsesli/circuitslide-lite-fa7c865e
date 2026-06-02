@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "0c57ae743aef431cb4b753bf28a872b5",
+    "title": "Gameplay - CircuitSlide Lite",
+    "htmlFile": "0c57ae743aef431cb4b753bf28a872b5.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQ1M2Y5ZjVhNjdmYzQyY2I4ZGIxYmMxYzY0M2QzZmZhEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNDg4Njk3MDQ2MTY4NzEzNTYzNA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/circuitslide-lite-fa7c865e/stitch/0c57ae743aef431cb4b753bf28a872b5.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "2aa3f124e86f4f2a8be8899dd7942039",
+    "title": "Game Settings - CircuitSlide Lite",
+    "htmlFile": "2aa3f124e86f4f2a8be8899dd7942039.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzdiMWZiNGNkZDFjZjQ1OTliMTg5OWViMTNmYzZjZjExEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNDg4Njk3MDQ2MTY4NzEzNTYzNA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/circuitslide-lite-fa7c865e/stitch/2aa3f124e86f4f2a8be8899dd7942039.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

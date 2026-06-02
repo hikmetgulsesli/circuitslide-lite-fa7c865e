@@ -35,7 +35,9 @@ export default function App() {
       data-testid="setfarm-app-root"
     >
       {state.activeScreen === "settings" ? (
-        <GameSettingsCircuitslideLite actions={settingsActions} />
+        <div className="min-h-0 w-full max-w-full flex-1 overflow-x-hidden [&_*]:min-w-0 [&_*]:max-w-[calc(100vw-2rem)] md:[&_*]:max-w-full">
+          <GameSettingsCircuitslideLite actions={settingsActions} />
+        </div>
       ) : (
         <GameplayCircuitslideLite actions={gameplayActions} runtime={runtime} />
       )}
